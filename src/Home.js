@@ -11,11 +11,11 @@ import './App.css'
 // which allows the currentScreen to be set to 'page' in the app. This causes the
 // page to re-render with the <Page /> element displayed instead of <Home />
 class Home extends Component {
-  // function take a click event , prevents the default action of a click from occuring
+  // function takes a click event , prevents the default action of a click from occuring
   // and passes the argument 'page' back to the App.js function navigateToPage
   // which then calls setState() to give the value 'page' to the currentScreen state
   // key. This causes the page to re-render with <Page /> view displayed due to
-  // the switch statement executing on the updated state 
+  // the switch statement executing on the updated state
   navigateTo = (event) => {
     event.preventDefault()
     this.props.navigate('page')
